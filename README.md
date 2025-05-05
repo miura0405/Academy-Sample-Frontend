@@ -1,7 +1,7 @@
 # 評価シート【フロントエンド】
 
 ## 目次
-- [HTML](#HTML)
+- HTML
     - [divタグの実装](#user-content-divタグ)
     - [aタグの実装](#user-content-aタグ)
 
