@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.highlight {
+  color: blue;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  color: gray;
+}
