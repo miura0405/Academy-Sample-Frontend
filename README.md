@@ -7,6 +7,9 @@
     - [ul、liタグの実装](#ulliタグの実装)
     - [pタグの実装](#pタグの実装)
     - [formタグの実装](#formタグの実装)
+
+- JavaScript
+    - [if文](#if文)
 ## HTML
 ### divタグ
 
