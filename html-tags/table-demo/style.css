@@ -1,0 +1,24 @@
+/* body要素のスタイル: 全体のフォントと余白を設定 */
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+/* table要素のスタイル: テーブル全体 */
+table {
+  width: 50%; /* テーブルの幅 */
+  border-collapse: collapse; /* 罫線を結合 */
+  margin: 20px 0; /* 上下の余白 */
+}
+
+/* th, td要素のスタイル: ヘッダーセルとデータセル */
+th, td {
+  border: 1px solid #ccc; /* 罫線 */
+  padding: 8px; /* 内側の余白 */
+  text-align: left; /* テキストの左寄せ */
+}
+
+/* th要素のスタイル: ヘッダーセルのみ */
+th {
+  background-color: #f2f2f2; /* ヘッダーの背景色 */
+}
