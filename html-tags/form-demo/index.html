@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>form, select, textarea の実装</title>
+</head>
+<body>
+
+  <h1>お問い合わせフォーム</h1>
+
+  <form action="/submit" method="post">
+    <div>
+      <label for="category">お問い合わせの種類:</label>
+      <select id="category" name="category">
+        <option value="question">ご質問</option>
+        <option value="request">ご要望</option>
+        <option value="other">その他</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="message">お問い合わせ内容:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30"></textarea>
+    </div>
+
+    <button type="submit">送信</button>
+  </form>
+
+</body>
+</html>
