@@ -18,6 +18,8 @@
     - [for文](#for文)
     - [array文](#array文)
     - [object](#object)
+    - [undefined-null文](#undefined-null文)
+
 
 ## HTML
 ### divタグ
@@ -207,3 +209,16 @@
 | 操作② (プロパティ変更) | `objName.key = newValue` で値を変更 |
 | メソッド利用 | `objName.method()` でオブジェクト内の機能を実行 |
 | 使用例 | 書籍情報、ユーザーデータ、設定値などの管理 |
+
+
+### undefined-null
+
+| 特性 | 説明 |
+|------|------|
+| 役割 | `undefined` は「未定義の状態」、`null` は「意図的に空であること」を示す |
+| 発生する場面 | `undefined`: 変数を宣言しただけ、存在しないプロパティへのアクセス`null`: 初期値として明示、DOM取得で要素が存在しない場合など |
+| 基本構文 (undefined) | `let a;`（値が代入されていない） |
+| 基本構文 (null) | `let b = null;`（意図的に空として初期化） |
+| typeof の結果 | `typeof undefined` → `"undefined"`<br>`typeof null` → `"object"`（仕様による） |
+| 使用例 | `undefined`: 未初期化変数の確認、存在しないプロパティチェック<br>`null`: 初期化済みの空データ、DOM取得結果の確認 |
+| 注意点 | `undefined` は JS が自動で設定することが多い<br>`null` は開発者が明示的に設定するケースが多い |
