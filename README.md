@@ -18,7 +18,8 @@
     - [for文](#for文)
     - [array文](#array文)
     - [object](#object)
-    - [undefined-null文](#undefined-null文)
+    - [undefined-null](#undefined-null)
+    - [function](#function)
 
 
 ## HTML
@@ -210,7 +211,6 @@
 | メソッド利用 | `objName.method()` でオブジェクト内の機能を実行 |
 | 使用例 | 書籍情報、ユーザーデータ、設定値などの管理 |
 
-
 ### undefined-null
 
 | 特性 | 説明 |
@@ -222,3 +222,15 @@
 | typeof の結果 | `typeof undefined` → `"undefined"`<br>`typeof null` → `"object"`（仕様による） |
 | 使用例 | `undefined`: 未初期化変数の確認、存在しないプロパティチェック<br>`null`: 初期化済みの空データ、DOM取得結果の確認 |
 | 注意点 | `undefined` は JS が自動で設定することが多い<br>`null` は開発者が明示的に設定するケースが多い |
+
+### function
+
+| 特性 | 説明 |
+|------|------|
+| 役割 | 一連の処理をまとめ、再利用可能にするための仕組み |
+| 通常の定義 | `function 関数名(引数) { 処理; return 戻り値; }` |
+| アロー関数 | `const 関数名 = (引数) => { 処理; return 戻り値; }`（より簡潔な構文） |
+| 引数の利用 | 関数に渡す値。関数内部で処理に使用される（例：`function add(a, b)`） |
+| 戻り値の利用 | `return` で処理結果を関数の外に返す（例：`return a + b`） |
+| 呼び出し方法 | `関数名(引数)` の形式で呼び出し、戻り値を受け取れる |
+| 使用例 | 計算処理、挨拶文の生成、複数結果のまとめなど |
