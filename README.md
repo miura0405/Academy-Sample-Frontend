@@ -20,7 +20,8 @@
     - [object](#object)
     - [undefined-null](#undefined-null)
     - [function](#function)
-    - [class](#class)
+    - [class-instance](#class-instance)
+    - [module-export](#module-export)
 
 ## HTML
 ### divタグ
@@ -247,3 +248,16 @@
 | constructor | インスタンス生成時に自動的に実行される初期化用のメソッド。引数を受け取ってプロパティを設定する。例：`constructor(name, age) { this.name = name; }` |
 | this | そのインスタンス自身を指す。プロパティやメソッドへアクセスするために使う。例：`this.name` はインスタンスの `name` にアクセスする。 |
 | new | クラスからインスタンスを生成するキーワード。例：`const user1 = new User("太郎", 25);` |
+
+### module-export
+
+| 特性 | 説明 |
+|------|------|
+| module |JavaScriptのコードを機能ごとに分割し、再利用や管理をしやすくする仕組み|
+| 役割 | モジュール間で関数や定数を共有・再利用するための仕組み |
+| export | 複数の関数や定数を名前付きでエクスポートできる（例：`export const greet = ...`） |
+| import方法（export） | `import { 関数名 } from './module.js';`（中括弧で指定。関数名は一致必須） |
+| 使用例① | `export const greet = () => { ... };`<br>`import { greet } from './module1.js';` |
+| export default | モジュールごとに1つだけエクスポート可能。インポート時に名前を自由に付けられる（例：`export default function add(...) {}`） |
+| import方法（export default） | `import 任意の名前 from './module.js';`（中括弧なし。名前は自由） |
+| 使用例② | `export default function add(a, b) { return a + b; }`<br>`import add from './module2.js';` |
